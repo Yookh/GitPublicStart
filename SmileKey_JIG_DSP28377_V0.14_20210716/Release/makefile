@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS
+CG_TOOL_ROOT := C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-c2000_20.2.1.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -178,34 +178,34 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-SmileKey_JIG_DSP28377_V0.13.out \
+SmileKey_JIG_DSP28377_V0.14.out \
 
 EXE_OUTPUTS__QUOTED += \
-"SmileKey_JIG_DSP28377_V0.13.out" \
+"SmileKey_JIG_DSP28377_V0.14.out" \
 
 BIN_OUTPUTS += \
-SmileKey_JIG_DSP28377_V0.13.hex \
+SmileKey_JIG_DSP28377_V0.14.hex \
 
 BIN_OUTPUTS__QUOTED += \
-"SmileKey_JIG_DSP28377_V0.13.hex" \
+"SmileKey_JIG_DSP28377_V0.14.hex" \
 
 
 # All Target
-all: SmileKey_JIG_DSP28377_V0.13.out
+all: SmileKey_JIG_DSP28377_V0.14.out
 
 # Tool invocations
-SmileKey_JIG_DSP28377_V0.13.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+SmileKey_JIG_DSP28377_V0.14.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: C2000 Linker'
-	"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --diag_warning=225 --display_error_number --diag_wrap=off -z -m"SmileKey_JIG_DSP28377_V0.13.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/lib" -i"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --reread_libs --display_error_number --diag_wrap=off --xml_link_info="SmileKey_JIG_DSP28377_V0.13_linkInfo.xml" --rom_model -o "SmileKey_JIG_DSP28377_V0.13.out" $(ORDERED_OBJS)
+	"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-c2000_20.2.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --diag_warning=225 --display_error_number --diag_wrap=off -z -m"SmileKey_JIG_DSP28377_V0.14.map" --stack_size=0x200 --warn_sections -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-c2000_20.2.1.LTS/lib" -i"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-c2000_20.2.1.LTS/include" --reread_libs --display_error_number --diag_wrap=off --xml_link_info="SmileKey_JIG_DSP28377_V0.14_linkInfo.xml" --rom_model -o "SmileKey_JIG_DSP28377_V0.14.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
-SmileKey_JIG_DSP28377_V0.13.hex: $(EXE_OUTPUTS)
-	@echo 'Building secondary target: "$@"'
+SmileKey_JIG_DSP28377_V0.14.hex: $(EXE_OUTPUTS)
+	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo 'Invoking: C2000 Hex Utility'
-	"C:/ti/ccs1031/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/hex2000" --diag_wrap=off -o "SmileKey_JIG_DSP28377_V0.13.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building secondary target: "$@"'
+	"C:/ti/ccs1010/ccs/tools/compiler/ti-cgt-c2000_20.2.1.LTS/bin/hex2000" --diag_wrap=off -o "SmileKey_JIG_DSP28377_V0.14.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo ' '
 
 # Other Targets
