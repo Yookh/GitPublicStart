@@ -51,7 +51,7 @@ enum AutoAging_State{
 #define PASS_OUTPUT_PO          17              // 17[W]
 #define PASS_OUTPUT_IR          800             // 8.00[A]
 #define PASS_VBAT               410             // 4.10[V]
-#define CHARGING_TIME           3.9               // 4 [hour]
+#define CHARGING_TIME           4               // 4 [hour]
 #define IDC_REF                 500             // 5.00[A]
 
 #define IO_OFFSET_COEF          4.0f
