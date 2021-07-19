@@ -1,0 +1,5 @@
+# FIXED
+
+DSP_28377_SETUP_cpu1.obj: ../DSP_28377_SETUP_cpu1.c
+
+../DSP_28377_SETUP_cpu1.c: 

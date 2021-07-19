@@ -1,0 +1,5 @@
+# FIXED
+
+MAIN_CPU1.obj: ../MAIN_CPU1.c
+
+../MAIN_CPU1.c: 
